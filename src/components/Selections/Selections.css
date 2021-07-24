@@ -1,0 +1,23 @@
+.selections {
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+#selection::-webkit-scrollbar {
+    width: 12px;
+    background-color: #f5f5f5;
+}
+
+#selection::-webkit-scrollbar-thumb {
+    background-color: #8755df;
+    border-radius: 5px;
+}
+
+#selection::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
+}

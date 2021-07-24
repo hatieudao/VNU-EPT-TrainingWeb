@@ -1,0 +1,151 @@
+.login {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url('../../image/bg-01.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login__title {
+    display: block;
+    font-size: 39px;
+    color: #333;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.login>form {
+    width: 400px;
+    height: 80%;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 65px 55px 54px 55px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.userInput {
+    display: flex;
+    flex-direction: column;
+    width: 390px;
+}
+
+.userInput>span {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+    padding-left: 7px;
+}
+
+.userInput__areaType {
+    width: 100%;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input__icon {
+    color: #333;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.userInput__areaType>input {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.2;
+    display: block;
+    width: 100%;
+    height: 55px;
+    background: 0 0;
+    padding: 0 7px 0 43px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+.input--focus {
+    width: 0;
+    height: 1px;
+    transition: .4s ease-in-out;
+}
+
+.userInput__areaType>input:focus+.input--focus {
+    width: 100%;
+    background-color: #333;
+}
+
+.userInput__areaType>input:focus+.input__icon {
+    color: rgb(139, 21, 143);
+}
+
+.userInput__submitButton {
+    width: 390px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    font-size: 18px;
+    color: white;
+    background: rgb(0, 207, 255);
+    background: linear-gradient(83deg, rgba(0, 207, 255, 1) 0%, rgba(252, 0, 255, 1) 70%);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    margin-top: 25px;
+}
+
+.userInput__submitButton:hover {
+    animation: colorMove .2s ease-in-out;
+    background: rgb(252, 0, 255);
+    background: linear-gradient(83deg, rgba(252, 0, 255, 1) 0%, rgba(0, 219, 222, 1) 90%);
+}
+
+.bottomTitle {
+    margin: 20px 0 30px 0;
+}
+
+.login__social>button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.login__social>button:hover {
+    transform: scale(1.12);
+}
+
+.login__social>button>img {
+    width: 50px;
+}
+
+@keyframes colorMove {
+    0% {
+        background: rgb(0, 207, 255);
+        background: linear-gradient(83deg, rgba(0, 207, 255, 1) 0%, rgba(252, 0, 255, 1) 70%);
+    }
+    33% {
+        background: rgb(0, 219, 222);
+        background: linear-gradient(83deg, rgba(0, 219, 222, 1) 0%, rgba(252, 0, 255, 1) 58%);
+    }
+    66% {
+        background: rgb(0, 219, 222);
+        background: linear-gradient(83deg, rgba(0, 219, 222, 1) 0%, rgba(252, 0, 255, 1) 32%, rgba(0, 219, 222, 1) 96%);
+    }
+    100% {
+        background: rgb(252, 0, 255);
+        background: linear-gradient(83deg, rgba(252, 0, 255, 1) 0%, rgba(0, 219, 222, 1) 90%);
+    }
+}

@@ -1,0 +1,47 @@
+.paragraphbar {
+    position: relative;
+    width: 60%;
+    overflow-y: scroll;
+    height: 100vh;
+    overflow: auto;
+    background-image: url(https://images.unsplash.com/photo-1542435503-956c469947f6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80);
+}
+
+.paragraphbar__title {
+    text-align: center;
+    font-weight: bolder;
+    z-index: 1;
+}
+
+.paragraphbar__overlay {
+    content: " ";
+    background-color: rgb(220, 219, 220, 0.86);
+    width: 100%;
+    height: max-content;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.paragraph {
+    font-size: 18px;
+    font-weight: bolder;
+    z-index: 1;
+    padding: 10px 5px 10px 55px;
+}
+
+#paragraph::-webkit-scrollbar {
+    width: 12px;
+    background-color: #f5f5f5;
+}
+
+#paragraph::-webkit-scrollbar-thumb {
+    background-color: #8755df;
+    border-radius: 5px;
+}
+
+#paragraph::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
+}

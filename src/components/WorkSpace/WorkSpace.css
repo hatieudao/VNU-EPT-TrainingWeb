@@ -1,0 +1,7 @@
+.workSpace {
+    background-color: #fbfdfd;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 1;
+}
