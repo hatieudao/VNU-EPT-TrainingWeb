@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 import classNames from 'classnames';
 import './Result.css';
 const check = (item) => item.answer === String.fromCharCode(item.selected + 65);
-const flatList = (list) => <div className="result__list">
+const flatList = (list, ind) => <div key={ind} className="result__list">
     <table className="container__table">
         <thead>
             <tr>
@@ -51,7 +51,7 @@ function Result() {
             </div>
             <div className="result__wrongList">
                 {
-                    data[filter].map(list => flatList(list))
+                    data[filter].map((list, ind) => flatList(list, ind))
                 }
             </div>
         </div>

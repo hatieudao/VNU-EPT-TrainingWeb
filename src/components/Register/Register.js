@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { auth } from '../../firebase';
 import { Link, useHistory } from 'react-router-dom';
 import PersonOutlineOutlinedIcon from '@material-ui/icons/PersonOutlineOutlined';

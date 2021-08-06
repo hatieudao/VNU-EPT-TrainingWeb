@@ -47,7 +47,7 @@ function Login() {
     }
 
     useEffect(() => {
-        if (history.location.state?.from !== '/register')
+        if (history?.location?.state?.from !== '/register')
             swal(<Alert message="Please login to continue ^^" />);
     }, []);
 

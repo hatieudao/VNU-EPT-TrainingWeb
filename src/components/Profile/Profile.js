@@ -5,8 +5,7 @@ import { logout } from '../../reducers/slices/user';
 import { auth } from '../../firebase';
 import './Profile.css';
 function Profile() {
-    const user = useSelector(state => state.user[0]);
-    console.log(user);
+    const user = useSelector(state => state.user.infor);
     const dispatch = useDispatch();
     const history = useHistory();
     return (

@@ -7,6 +7,15 @@
     background-image: url(https://images.unsplash.com/photo-1542435503-956c469947f6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80);
 }
 
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 .paragraphbar__title {
     text-align: center;
     font-weight: bolder;
@@ -15,7 +24,7 @@
 
 .paragraphbar__overlay {
     content: " ";
-    background-color: rgb(220, 219, 220, 0.86);
+    background-color: rgb(220, 219, 220, 0.93);
     width: 100%;
     height: max-content;
     position: absolute;
@@ -26,9 +35,9 @@
 
 .paragraph {
     font-size: 18px;
-    font-weight: bolder;
+    font-weight: 400;
     z-index: 1;
-    padding: 10px 5px 10px 55px;
+    padding: 10px 75px 10px 55px;
 }
 
 #paragraph::-webkit-scrollbar {

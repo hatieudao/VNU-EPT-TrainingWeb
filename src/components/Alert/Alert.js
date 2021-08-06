@@ -5,7 +5,7 @@ function Alert({ message }) {
     return (
         <div className="notification">
             <img src={logo} alt="logo" />
-            <p className="notification">{message}</p>
+            <p className="notification__message">{message}</p>
         </div>
     )
 }
